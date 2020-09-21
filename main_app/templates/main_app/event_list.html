@@ -1,16 +1,15 @@
 {% extends 'base.html' %}
 {% block content %}
 
-<h1>Event List</h1>
+<h1>Date List</h1>
 
-{% for event in event_list %}
- 
+
+{% for date in events %}
     <div class="card">
         <div class="card-content">
-            <span class="card-title">{{ event.date }}</span>
+            <span class="card-title">{{ event }}</span>
         </div>
     </div>
-  
 {% endfor %}
 
 {% endblock %}

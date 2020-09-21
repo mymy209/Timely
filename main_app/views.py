@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth import login
+from django.urls import reverse
 from .models import Event
 from django.views.generic import ListView 
 from django.views.generic.edit import CreateView
@@ -12,10 +13,18 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 def home(request):
     return render(request, 'home.html')
 
-
-class EventList(LoginRequiredMixin, ListView):
-    model = Event
-
+@login_required
+def event_list(request):
+    events = Event.objects.all()
+    dates = dict.fromkeys(list(map(lambda event: event.date, events)), [])
+    for event in events:
+        dates[event.date].append(event)
+    print('LOOK HERE')
+    print(dates)
+    return render(request, 'main_app/event_list.html', {
+        'events': dates
+    })
+    
 
 class EventCreate(LoginRequiredMixin, CreateView):
     model = Event
