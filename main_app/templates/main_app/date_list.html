@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>Date List</h1>
+
+{% for date in events %}
+    <a href="{% url 'date_details' date %}">
+        <div class="card">
+            <div class="card-content">
+                <span class="card-title">{{ date }}</span>
+            </div>
+        </div>
+    </a>
+{% endfor %}
+
+{% endblock %}
