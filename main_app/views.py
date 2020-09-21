@@ -14,16 +14,27 @@ def home(request):
     return render(request, 'home.html')
 
 @login_required
-def event_list(request):
+def date_list(request):
     events = Event.objects.all()
     dates = dict.fromkeys(list(map(lambda event: event.date, events)), [])
     for event in events:
         dates[event.date].append(event)
-    print('LOOK HERE')
-    print(dates)
-    return render(request, 'main_app/event_list.html', {
+    return render(request, 'main_app/date_list.html', {
         'events': dates
     })
+
+@login_required
+def date_details(request, date):
+    events = Event.objects.filter(date=date)
+    date_events = []
+    for event in events:
+        date_events.append(event)
+    print('LOOK HERE PLEASE')
+    print(date_events)
+    return render(request, 'main_app/date_details.html', {
+        'date_events': date_events
+    })
+    
     
 
 class EventCreate(LoginRequiredMixin, CreateView):
