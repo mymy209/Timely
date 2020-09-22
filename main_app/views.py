@@ -34,8 +34,6 @@ def date_details(request, date):
     return render(request, 'main_app/date_details.html', {
         'date_events': date_events
     })
-    
-    
 
 class EventCreate(LoginRequiredMixin, CreateView):
     model = Event
