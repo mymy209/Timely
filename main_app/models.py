@@ -11,10 +11,14 @@ class Event(models.Model):
     event_details = models.TextField(max_length=300)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     
-
     def __str__(self):
         return self.event_name
 
     def get_absolute_url(self):
         return reverse('event_details', kwargs={'pk': self.id})
+
+    class Meta:
+        ordering = ['date', 'time']
+
+    
 
