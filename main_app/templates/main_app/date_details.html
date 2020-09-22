@@ -5,11 +5,13 @@
 <h1>Events</h1>
 
 {% for event in date_events %}
+    <a href="{% url 'event_details' event.id %}">
         <div class="card">
             <div class="card-content">
                 <span class="card-title">{{ event }}</span>
             </div>
         </div>
+    </a>
 {% endfor %}
 
 {% endblock %}
