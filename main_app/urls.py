@@ -8,4 +8,6 @@ urlpatterns = [
     path('date/date_detail/<slug:date>/', views.date_details, name="date_details"),
     path('accounts/signup/', views.signup, name='signup'),
     path('event/event_detail/<int:pk>', views.EventDetail.as_view(), name="event_details"),
+    path('event/event_detail/<int:pk>/update/', views.EventUpdate.as_view(), name="event_update"),
+    path('event/event_detail/<int:pk>/delete', views.EventDelete.as_view(), name="event_delete"),
 ]

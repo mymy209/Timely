@@ -3,7 +3,7 @@ from django.contrib.auth import login
 from django.urls import reverse
 from .models import Event
 from django.views.generic import ListView, DetailView
-from django.views.generic.edit import CreateView
+from django.views.generic.edit import CreateView, DeleteView, UpdateView
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
@@ -66,3 +66,12 @@ def signup(request):
 class EventDetail(LoginRequiredMixin, DetailView):
     model = Event
 
+class EventUpdate(LoginRequiredMixin, UpdateView):
+    model = Event
+    fields = ['event_name', 'time', 'event_details']
+
+class EventDelete(LoginRequiredMixin, DeleteView):
+    model = Event
+    success_url = '/dates/'
+
+    
