@@ -7,7 +7,7 @@ from django.contrib.auth.models import User
 class Event(models.Model):
     event_name = models.CharField(max_length=100)
     date = models.DateField('event date')
-    time = models.TimeField()
+    time = models.TimeField('military time')
     event_details = models.TextField(max_length=300)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     

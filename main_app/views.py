@@ -34,8 +34,6 @@ def date_details(request, date):
     return render(request, 'main_app/date_details.html', {
         'date_events': date_events
     })
-    
-    
 
 class EventCreate(LoginRequiredMixin, CreateView):
     model = Event
@@ -68,7 +66,7 @@ class EventDetail(LoginRequiredMixin, DetailView):
 
 class EventUpdate(LoginRequiredMixin, UpdateView):
     model = Event
-    fields = ['event_name', 'time', 'event_details']
+    fields = ['event_name', 'date', 'time', 'event_details']
 
 def event_delete(request, event_id):
     event = Event.objects.get(id=event_id)
