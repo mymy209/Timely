@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Timely</title>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="{% static 'css/test.css' %}">
@@ -14,8 +14,8 @@
 </head>
 <body>
   <header class="navbar-fixed">
-    <nav>
-      <div class="nav-wrapper">
+    <nav class="transparent z-depth-0">
+      <div class="nav-wrapper" >
         <ul class="right">
           {% if user.is_authenticated %}
             <li><a href="{% url 'dates_index' %}"><i class="material-icons left">event_note</i>Dates</a></li>
