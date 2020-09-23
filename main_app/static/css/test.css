@@ -1,0 +1,44 @@
+html {
+    background-image: url('https://i.imgur.com/0QbVZH4.jpg');
+    background-color: rgba(255, 255, 255, 0.8);
+    background-blend-mode: lighten;
+    background-size: 500px;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+}
+
+.nav-wrapper {
+    background-color: #51D0DE;
+}
+
+h1 {
+    color: #BF4AA8;
+}
+
+.nav-wrapper a {
+    color: #BF4AA8;
+}
+
+.card {
+    background-color: #ecebeb;
+}
+
+input[type=submit] {
+    background-color: #BF4AA8;
+}
+
+input[type=submit]:hover {
+    background-color: #51D0DE;
+}
+
+.datepicker-date-display{
+    background-color: #BF4AA8;
+}
+
+.searchForm {
+    margin-left: 200px;
+}
+
+
