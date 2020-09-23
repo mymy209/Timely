@@ -33,7 +33,7 @@ _____
 Once you have navigated to the landing page sign in to start using Timely!
 <a href="https://timely-msj.herokuapp.com/">Click here to try!</a>
 
-To see our planning process, check out our Trello board <a href="https://trello.com/b/O5GHra3D/project-3-planning">here.</a>
+To see our planning process, check out our  <a href="https://trello.com/b/O5GHra3D/project-3-planning">Trello Board</a> and our <a href="https://docs.google.com/presentation/d/1sVBTYElRF21UotixaM-FNDl-piqKawYMsPlr7B23MQU/edit?usp=sharing">Pitch Deck </a>.
 
 ## Next Steps
 In the future we would like to add the following:
