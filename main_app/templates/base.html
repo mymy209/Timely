@@ -19,6 +19,7 @@
         <ul class="right">
           {% if user.is_authenticated %}
             <li><a href="{% url 'dates_index' %}"><i class="material-icons left">event_note</i>Dates</a></li>
+            <li><a href="{% url 'passed_dates_index' %}"><i class="material-icons left">event_note</i>Passed Dates</a></li>
             <li><a href="{% url 'events_create' %}"><i class="material-icons left">playlist_add</i>Create an Event</a></li>
             <li><a href="{% url 'logout' %}"><i class="material-icons left">person</i>Log Out</a></li>
           {% else %}

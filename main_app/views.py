@@ -73,4 +73,13 @@ def event_delete(request, event_id):
     Event.objects.filter(id=event_id).delete()
     return redirect('date_details', date = event.date)
 
+def passed_date_list(request):
+    events = Event.objects.all()
+    dates = dict.fromkeys(list(map(lambda event: event.date, events)), [])
+    for event in events:
+        dates[event.date].append(event)
+    return render(request, 'main_app/passed_date_list.html', {
+        'events': dates
+    })
+
     

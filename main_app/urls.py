@@ -10,4 +10,5 @@ urlpatterns = [
     path('event/event_detail/<int:pk>', views.EventDetail.as_view(), name="event_details"),
     path('event/event_detail/<int:event_id>/delete/', views.event_delete, name="event_delete"),
     path('event/event_detail/<int:pk>/update/', views.EventUpdate.as_view(), name="event_update"),
+    path('passed_dates/', views.passed_date_list, name="passed_dates_index"),
 ]
