@@ -6,20 +6,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Timely</title>
+  <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="{% static 'css/test.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </head>
 <body>
   <header class="navbar-fixed">
     <nav class="transparent z-depth-0">
       <div class="nav-wrapper" >
+        <ul class="left">
+          <a href="{% url 'home' %}"><img src="https://i.imgur.com/DIQ9tgk.png" id="timely"></a>
+        </ul>
         <ul class="right">
           {% if user.is_authenticated %}
-            <li><a href="{% url 'dates_index' %}"><i class="material-icons left">event_note</i>Dates</a></li>
-            <li><a href="{% url 'passed_dates_index' %}"><i class="material-icons left">event_note</i>Passed Dates</a></li>
+            <li><a href="{% url 'dates_index' %}"><i class="material-icons left">event_note</i>Upcoming Dates</a></li>
+            <li><a href="{% url 'passed_dates_index' %}"><i class="material-icons left">event_note</i>Past Dates</a></li>
             <li><a href="{% url 'events_create' %}"><i class="material-icons left">playlist_add</i>Create an Event</a></li>
             <li><a href="{% url 'logout' %}"><i class="material-icons left">person</i>Log Out</a></li>
           {% else %}

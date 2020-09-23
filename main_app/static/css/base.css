@@ -1,0 +1,71 @@
+html {
+    background-image: url('https://i.imgur.com/BZos6OW.jpg');
+    background-color: rgba(255, 255, 255, 0.918);
+    background-blend-mode: lighten;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body {
+    font-family: 'Kalam', cursive;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.nav-wrapper {
+    background-color: #a3f6ff00;
+}
+
+.nav-wrapper a {
+    color: rgb(87, 84, 84);
+}
+
+#timely {
+    margin-top: 10px;
+    width: 120px;
+}
+
+h1 {
+    color: rgb(87, 84, 84);
+    /* color: #ff8ae8; */
+    font-weight: 900;
+    /* text-shadow: 2px 2px 2px darkgrey; */
+}
+
+.card {
+    background-color: rgb(255, 255, 255);
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
+input[type=submit] {
+    background-color: #51D0DE;
+}
+
+input[type=submit]:hover {
+    background-color: #51D0DE;
+}
+
+.card-action a {
+    color: #374785;
+}
+
+.datepicker-date-display{
+    background-color: #BF4AA8;
+}
+
+.card-title {
+    color: #374785;
+}
+
+label {
+    color: rgb(87, 84, 84);
+    font-size: large;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+}
