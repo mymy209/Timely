@@ -36,7 +36,7 @@ Once you have navigated to the landing page sign in to start using Timely!
 To see our planning process, check out our Trello board <a href="https://trello.com/b/O5GHra3D/project-3-planning">here.</a>
 
 ## Next Steps
-In the future I would like to add the following:
+In the future we would like to add the following:
 
 * Search for an Event
 
