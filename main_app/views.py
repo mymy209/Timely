@@ -15,7 +15,7 @@ def home(request):
 
 @login_required
 def date_list(request):
-    events = Event.objects.all()
+    events = Event.objects.filter(user=request.user)
     dates = dict.fromkeys(list(map(lambda event: event.date, events)), [])
     for event in events:
         dates[event.date].append(event)
@@ -25,7 +25,7 @@ def date_list(request):
 
 @login_required
 def date_details(request, date):
-    events = Event.objects.filter(date=date)
+    events = Event.objects.filter(date=date, user=request.user)
     date_events = []
     for event in events:
         date_events.append(event)
@@ -74,7 +74,7 @@ def event_delete(request, event_id):
     return redirect('date_details', date = event.date)
 
 def passed_date_list(request):
-    events = Event.objects.all()
+    events = Event.objects.filter(user=request.user)
     dates = dict.fromkeys(list(map(lambda event: event.date, events)), [])
     for event in events:
         dates[event.date].append(event)
