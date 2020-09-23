@@ -1,25 +1,27 @@
 html {
-    background-image: url('https://images.unsplash.com/photo-1470790376778-a9fbc86d70e2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');
-    background-color: rgba(255, 255, 255, 0.7);
+    background-image: url('https://i.imgur.com/BZos6OW.jpg');
+    background-color: rgba(231, 231, 231, 0.658);
     background-blend-mode: lighten;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 body {
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .nav-wrapper {
-    background-color: #51D0DE;
+    background-color: #a3f6ff00;
 }
 
 h1 {
-    color: #BF4AA8;
+    color: #ff8ae8;
+    font-weight: 900;
 }
 
 .nav-wrapper a {
-    color: #BF4AA8;
+    color: #ff8ae8;
+    ;
 }
 
 .card {
@@ -27,11 +29,12 @@ h1 {
 }
 
 input[type=submit] {
-    background-color: #BF4AA8;
+    background-color: #ff8ae8;
+    ;
 }
 
 input[type=submit]:hover {
-    background-color: #51D0DE;
+    background-color: #b6f8ff;
 }
 
 .datepicker-date-display{
