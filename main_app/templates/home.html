@@ -1,32 +1,60 @@
-{% extends 'base.html' %}
-{% block content %}
-
-<h1 class="center-align">Home</h1>
-<!-- Section: Icon Boxes -->
-
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Timely</title>
+  <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</head>
+<body>
+  <header class="navbar-fixed">
+    <nav class="transparent z-depth-0">
+      <div class="nav-wrapper" >
+        <ul class="left">
+            <a href="{% url 'home' %}"><img src='https://i.imgur.com/9cwg8WT.png' id="timely"></a>
+        </ul>
+        <ul class="right">
+          {% if user.is_authenticated %}
+            <li><a href="{% url 'dates_index' %}"><i class="material-icons left">event_note</i>Upcoming Dates</a></li>
+            <li><a href="{% url 'passed_dates_index' %}"><i class="material-icons left">event_note</i>Past Dates</a></li>
+            <li><a href="{% url 'events_create' %}"><i class="material-icons left">playlist_add</i>Create an Event</a></li>
+            <li><a href="{% url 'logout' %}"><i class="material-icons left">person</i>Log Out</a></li>
+          {% else %}
+            <li><a href="{% url 'signup' %}">Sign Up</a></li>
+            <li><a href="{% url 'login' %}">Log In</a></li>
+          {% endif %}
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="container">
     <div class="container">
         <div class="row">
             <div>
                 <div class="card-panel col s4 center">
                     <i class="material-icons large">watch_later</i>
                     <h4>Manage Your Time Efficiently</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, odio!</p>
+                    
                 </div>
-
                 <div class="card-panel col s4 center">
                     <i class="large material-icons  center">computer</i>
                     <h4>Make an Account to Get Started!</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, odio!</p>
                 </div>
-
                 <div class="card-panel col s4 center">
                     <i class="material-icons large">arrow_upward</i>
                     <h4>Click the icons above to navigate</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, odio!</p>
                 </div>
             </div>
         </div>
     </div>
-
-
-{% endblock %}
+</main>
+</body>
+</html>

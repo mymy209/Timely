@@ -1,0 +1,45 @@
+html {
+    background: linear-gradient(-45deg, #ee528e, #aa49e2, #23a6d5, #23d5ab);
+    width: 100%;
+    height: 100%;
+    background-size: 400% 400%;
+    position: relative;
+    animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+body {
+    font-family: 'Kalam', cursive;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.nav-wrapper a {
+    color: white;
+}
+
+#timely {
+    margin-top: 10px;
+    width: 120px;
+}
+
+.container {
+    margin-top: 150px;
+}
+
+.card-panel {
+    background-color: transparent;
+    color: white;
+    box-shadow: none;
+}
+  
