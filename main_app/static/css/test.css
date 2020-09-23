@@ -1,10 +1,8 @@
 html {
-    background-image: url('https://i.imgur.com/esBMbS0.jpg');
-    background-color: rgba(255, 255, 255, 0.6);
+    background-image: url('https://i.imgur.com/0QbVZH4.jpg');
+    background-color: rgba(255, 255, 255, 0.8);
     background-blend-mode: lighten;
-    background-size: 350px;
-    /* background-repeat: no-repeat;
-    background-size: cover; */
+    background-size: 500px;
 }
 
 body {
@@ -12,15 +10,15 @@ body {
 }
 
 .nav-wrapper {
-    background-color: #A8D0E6;
+    background-color: #51D0DE;
 }
 
 h1 {
-    color: #374785;
+    color: #BF4AA8;
 }
 
 .nav-wrapper a {
-    color: #F76C6C;
+    color: #BF4AA8;
 }
 
 .card {
@@ -42,8 +40,3 @@ input[type=submit]:hover {
 .searchForm {
     margin-left: 200px;
 }
-
-.card-title {
-    color: #374785;
-}
-
