@@ -6,7 +6,7 @@
 {% for date in events %}
     {% if date < date.today %}
         <a href="{% url 'date_details' date %}">
-            <div class="card">
+            <div class="card hoverable">
                 <div class="card-content">
                     <span class="card-title">{{ date }}</span>
                 </div>

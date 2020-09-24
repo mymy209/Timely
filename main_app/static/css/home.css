@@ -35,6 +35,7 @@ body {
 
 .container {
     margin-top: 150px;
+    width: 100%;
 }
 
 .card-panel {
@@ -42,4 +43,12 @@ body {
     color: white;
     box-shadow: none;
 }
+
+.flexRow {
+    display: flex;
+    justify-content: space-around;
+}
   
+.row {
+    width: 100%;
+}

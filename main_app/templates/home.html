@@ -23,6 +23,7 @@
         </ul>
         <ul class="right">
           {% if user.is_authenticated %}
+            <li><a href="{% url 'search_index' %}">Search Events</a></li>
             <li><a href="{% url 'dates_index' %}"><i class="material-icons left">event_note</i>Upcoming Dates</a></li>
             <li><a href="{% url 'passed_dates_index' %}"><i class="material-icons left">event_note</i>Past Dates</a></li>
             <li><a href="{% url 'events_create' %}"><i class="material-icons left">playlist_add</i>Create an Event</a></li>
@@ -35,26 +36,22 @@
       </div>
     </nav>
   </header>
-  <main class="container">
-    <div class="container">
-        <div class="row">
-            <div>
-                <div class="card-panel col s4 center">
-                    <i class="material-icons large">watch_later</i>
-                    <h4>Manage Your Time Efficiently</h4>
-                    
-                </div>
-                <div class="card-panel col s4 center">
-                    <i class="large material-icons  center">computer</i>
-                    <h4>Make an Account to Get Started!</h4>
-                </div>
-                <div class="card-panel col s4 center">
-                    <i class="material-icons large">arrow_upward</i>
-                    <h4>Click the Icons Above To Navigate</h4>
-                </div>
-            </div>
-        </div>
-    </div>
+<main class="container">
+  <div class="flexRow"> 
+      <div class="card-panel col s4 center homeCard">
+          <i class="material-icons large">watch_later</i>
+          <h4>Manage Your Time Efficiently</h4>
+          
+      </div>
+      <div class="card-panel col s4 center homeCard">
+          <i class="large material-icons  center">computer</i>
+          <h4>Make an Account to Get Started!</h4>
+      </div>
+      <div class="card-panel col s4 center homeCard">
+          <i class="material-icons large">arrow_upward</i>
+          <h4>Click the icons above to navigate</h4>
+      </div>
+  </div>
 </main>
 </body>
 </html>

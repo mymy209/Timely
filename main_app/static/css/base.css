@@ -7,7 +7,7 @@ html {
 }
 
 body {
-    font-family: 'Kalam', cursive;
+    font-weight: 100;
     font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -19,6 +19,10 @@ body {
     color: rgb(87, 84, 84);
 }
 
+.nav-wrapper a:hover {
+    background-color: #51d0de3b;
+}
+
 #timely {
     margin-top: 10px;
     width: 120px;
@@ -27,7 +31,8 @@ body {
 h1 {
     color: rgb(87, 84, 84);
     /* color: #ff8ae8; */
-    font-weight: 900;
+    font-weight: 600;
+    font-family: 'Source Sans Pro', sans-serif;
     /* text-shadow: 2px 2px 2px darkgrey; */
 }
 
@@ -37,23 +42,28 @@ h1 {
 }
 
 input[type=submit] {
-    background-color: #51D0DE;
+    background-color: #db90e2;
 }
 
 input[type=submit]:hover {
-    background-color: #51D0DE;
+    background-color: #ab6bad;
 }
 
 .card-action a {
-    color: #374785;
+    color: white;
+}
+
+.hoverable:hover {
+    box-shadow: 0px 0px 15px 0px#51D0DE;
 }
 
 .datepicker-date-display{
-    background-color: #BF4AA8;
+    background-color: #db90e2;
 }
 
 .card-title {
-    color: #374785;
+    color: rgb(87, 84, 84);
+    font-size: 25px !important;
 }
 
 label {
@@ -68,4 +78,13 @@ label {
     100% {
       transform: translateX(0);
     }
+}
+
+p {
+    font-size: 20px;
+    color: rgb(87, 84, 84);
+}
+
+#search {
+    padding-left: 2rem;
 }
