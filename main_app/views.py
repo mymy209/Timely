@@ -8,8 +8,6 @@ from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
 
-
-# Create your views here.
 def home(request):
     return render(request, 'home.html')
 
@@ -82,4 +80,12 @@ def passed_date_list(request):
         'events': dates
     })
 
-    
+def search_index(request):
+    return render(request, 'main_app/search_index.html')
+
+def search_list(request):
+    search = request.POST.get('search')
+    events = Event.objects.filter(event_name__icontains=search)
+    return render(request, 'main_app/search_list.html', {
+        'events': events
+    })
