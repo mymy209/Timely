@@ -2,22 +2,25 @@
 
 ## Description
 
-Timely is made for those who need help managing all of the events in their life. The user can add multiple "events" to a given date. Timely will do all of the time and date ordering for you! 
+Timely is made for those who need help managing all of the events in their life. The user can add multiple "events" to a given date. Timely will do all of the time and date ordering for you!
 ______
 
 ## Screen Shots
 
 ### Home Page
-<img src="https://i.imgur.com/f9HS41M.png" height=200px>
+<img src="https://i.imgur.com/0HbPV32.png" height=200px>
 
 ### All Dates
-<img src="https://i.imgur.com/boArltp.png" height=195px>
+<img src="https://i.imgur.com/EfWWaan.png" height=185px>
 
 ### Add An Event
-<img src="https://i.imgur.com/J57pC8b.png" height=200px>
+<img src="https://i.imgur.com/LDWfu8x.png" height=185px>
 
 ### Look at Past Events 
-<img src="https://i.imgur.com/9NBSPiV.png" height= 200px>
+<img src="https://i.imgur.com/1KngzE5.png" height=185px>
+
+### Search for an Event
+<img src="https://i.imgur.com/dKhVE52.png" height=185px>
 
 _____
 

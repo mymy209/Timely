@@ -85,7 +85,7 @@ def search_index(request):
 
 def search_list(request):
     search = request.POST.get('search')
-    events = Event.objects.filter(event_name__icontains=search)
+    events = Event.objects.filter(user=request.user, event_name__icontains=search)
     return render(request, 'main_app/search_list.html', {
         'events': events
     })

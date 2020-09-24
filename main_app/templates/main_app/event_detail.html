@@ -13,8 +13,8 @@
         <p>Details: {{ event.event_details }}</p>
       </div>
       <div class="card-action">
-        <a href="{% url 'event_update' event.id %}">Edit</a>
-        <a href="{% url 'event_delete' event.id %}">Delete</a>
+        <a id="formButton" href="{% url 'event_update' event.id %}">Edit</a>
+        <a id="formButton" href="{% url 'event_delete' event.id %}">Delete</a>
       </div>
     </div>
   </div>

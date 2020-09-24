@@ -42,6 +42,7 @@ body {
     background-color: transparent;
     color: white;
     box-shadow: none;
+    padding: 100px;
 }
 
 .flexRow {
@@ -51,4 +52,8 @@ body {
   
 .row {
     width: 100%;
+}
+    
+#title {
+    margin-left: -15px;
 }

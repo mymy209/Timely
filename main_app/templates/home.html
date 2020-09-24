@@ -23,17 +23,16 @@
         </ul>
         <ul class="right">
           {% if user.is_authenticated %}
-            <li><a href="{% url 'search_index' %}">Search Events</a></li>
-            <li><a href="{% url 'dates_index' %}"><i class="material-icons left">event_note</i>Upcoming Dates</a></li>
-            <li><a href="{% url 'passed_dates_index' %}"><i class="material-icons left">event_note</i>Past Dates</a></li>
-            <li><a href="{% url 'events_create' %}"><i class="material-icons left">playlist_add</i>Create an Event</a></li>
-            <li><a href="{% url 'logout' %}"><i class="material-icons left">person</i>Log Out</a></li>
+            <li><a href="{% url 'search_index' %}"><i class="material-icons left">search</i><span id="title">Search Events</span></a></li>
+            <li><a href="{% url 'dates_index' %}"><i class="material-icons left">event_note</i><span id="title">Upcoming Dates</span></a></li>
+            <li><a href="{% url 'events_create' %}"><i class="material-icons left">playlist_add</i><span id="title">Create an Event</span></a></li>
+            <li><a href="{% url 'logout' %}"><i class="material-icons left">person</i><span id="title">Log Out</span></a></li>
           {% else %}
             <li><a href="{% url 'signup' %}">Sign Up</a></li>
             <li><a href="{% url 'login' %}">Log In</a></li>
           {% endif %}
         </ul>
-      </div>
+      </div> 
     </nav>
   </header>
 <main class="container">
@@ -49,7 +48,7 @@
       </div>
       <div class="card-panel col s4 center homeCard">
           <i class="material-icons large">arrow_upward</i>
-          <h4>Click the icons above to navigate</h4>
+          <h4>Click The Icons Above to Navigate</h4>
       </div>
   </div>
 </main>
