@@ -27,6 +27,7 @@ _____
 ## Technologies Used
 * HTML
 * CSS
+* Materialize
 * JavaScript
 * Python
 * Django
@@ -40,8 +41,6 @@ To see our planning process, check out our  <a href="https://trello.com/b/O5GHra
 
 ## Next Steps
 In the future we would like to add the following:
-
-* Search for an Event
 
 * Calendar Grid
 
