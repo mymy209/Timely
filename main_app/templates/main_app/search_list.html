@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Search Results</h1>
+
+{% if events %}
+    {% for event in events %}
+        <a href="{% url 'event_details' event.id %}">
+            <div class="card hoverable">
+                <div class="card-content">
+                    <span class="card-title">{{ event }}</span>
+                    <p>{{ event.date }}</p>
+                    <p>{{ event.time }}</p>
+                </div>
+            </div>
+        </a>
+    {% endfor %}
+{% else %}
+    <p>No Event Match...</p>
+{% endif %}
+
+{% endblock %}

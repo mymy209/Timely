@@ -11,4 +11,6 @@ urlpatterns = [
     path('event/event_detail/<int:event_id>/delete/', views.event_delete, name="event_delete"),
     path('event/event_detail/<int:pk>/update/', views.EventUpdate.as_view(), name="event_update"),
     path('passed_dates/', views.passed_date_list, name="passed_dates_index"),
+    path('search/', views.search_index, name="search_index"),
+    path('search/results/', views.search_list, name="search_list"),
 ]
