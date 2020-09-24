@@ -88,3 +88,20 @@ p {
 #search {
     padding-left: 2rem;
 }
+
+#title {
+    margin-left: -15px;
+}
+
+#form {
+    padding: 0px 20px 0px 20px;
+}
+
+#formButton{
+    color: #db90e2;
+    /* background-color: #db90e2; */
+    
+}
+ #formButton:hover{
+    color: #ab6bad
+ }
