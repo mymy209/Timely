@@ -1,6 +1,6 @@
 # Timely 
 
-### Description
+## Description
 
 Timely is made for those who need help managing all of the events in their life. The user can add multiple "events" to a given date. Timely will do all of the time and date ordering for you! 
 ______
@@ -8,16 +8,16 @@ ______
 ## Screen Shots
 
 ### Home Page
-<img src="" >
+<img src="https://i.imgur.com/f9HS41M.png" height=200px>
 
 ### All Dates
-<img src="" >
+<img src="https://i.imgur.com/boArltp.png" height=195px>
 
-### Add A Date
-<img src="" >
+### Add An Event
+<img src="https://i.imgur.com/J57pC8b.png" height=200px>
 
-### Add An Event 
-<img src="" >
+### Look at Past Events 
+<img src="https://i.imgur.com/9NBSPiV.png" height= 200px>
 
 _____
 
@@ -27,7 +27,7 @@ _____
 * JavaScript
 * Python
 * Django
-* PostgreSQl
+* PostgreSQL
 
 ## Getting Started
 Once you have navigated to the landing page sign in to start using Timely!
