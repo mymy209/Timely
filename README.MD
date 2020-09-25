@@ -1,8 +1,11 @@
 # Timely 
 
 ## Description
+Us busy bees have no time to waste on writing down and organizing the events coming up! 
 
-Timely is made for those who need help managing all of the events in their life. The user can add multiple "events" to a given date. Timely will do all of the time and date ordering for you!
+Timely will minimize the time you're using to check your schedule by only showing the dates that have events -- the dates that matter. 
+
+So go ahead and toss away that bulky scheduler... Don't be shy and use Timely!
 ______
 
 ## Screen Shots
