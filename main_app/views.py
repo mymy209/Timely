@@ -13,10 +13,14 @@ def home(request):
 
 @login_required
 def date_list(request):
+    #grab all user events
     events = Event.objects.filter(user=request.user)
+    # make dict with key of event.date for each events, key of []
     dates = dict.fromkeys(list(map(lambda event: event.date, events)), [])
+    # event_date: [events]
     for event in events:
         dates[event.date].append(event)
+    #date = { dates: [events] }
     return render(request, 'main_app/date_list.html', {
         'events': dates
     })
@@ -27,8 +31,6 @@ def date_details(request, date):
     date_events = []
     for event in events:
         date_events.append(event)
-    print('LOOK HERE PLEASE')
-    print(date_events)
     return render(request, 'main_app/date_details.html', {
         'date_events': date_events
     })
